@@ -1,0 +1,114 @@
+html {
+  font-family: Arial, Helvetica, sans-serif; 
+  display: inline-block; 
+  text-align: center;
+}
+
+body {  
+  margin: 0;
+}
+
+header { 
+  overflow: hidden; 
+  background-color: #0A1128;
+}
+
+header h1 {
+  font-size: 1.8rem; 
+  color: white;
+}
+
+nav{
+  overflow: hidden;
+  background-color: #2f567a;
+  padding: 5px;
+  color: white;
+}
+
+nav button {
+  border: none;
+  color: #FEFCFB;
+  background-color: #022648;
+  padding: 15px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  width: auto;
+  margin-right: 10px;
+  border-radius: 4px;
+  transition-duration: 0.4s;
+}
+
+nav button:hover {
+  background-color: #1282A2;
+}
+
+
+.container { 
+  padding: 5%;
+}
+
+
+.card-grid { 
+  max-width: 1000px;
+  margin: 0 auto; 
+  display: grid; 
+  grid-gap: 2rem; 
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.card-title { 
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #034078
+}
+
+.card { 
+  padding: 2%;
+  background-color: white; 
+  box-shadow: 2px 2px 12px 1px rgba(140,140,140,.5);
+}
+
+.led{
+  display: block;
+  padding: 5px;
+}
+
+.led label{
+  font-size: 1.2rem;
+}
+
+.green-button, .led input[type=button]{
+  width: 60px;
+  height: 40px;
+  color: white;
+  border: 0px solid;
+  border-radius: 7px;
+}
+
+.blue-button, .led input[value=ON]{
+  background-color: rgb(44, 64, 120);
+}
+.blue-button:hover, .led input[value=ON]:hover{
+  background-color: rgba(44, 64, 120, 0.677);
+}
+
+.red-button, .led input[value=OFF]{
+  background-color: rgb(120, 44, 44);
+}
+
+.red-button:hover, .led input[value=OFF]:hover{
+  background-color: rgba(120, 44, 44, 0.677);
+}
+
+
+/* debug */
+.green-button{
+  background-color: rgb(41, 160, 14);
+  width: 90px;
+}
+
+.green-button:hover{
+  background-color: rgba(41, 160, 14, 0.677);
+}

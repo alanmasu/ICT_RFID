@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="/style.css">
+	<title>ESP32 WebServer</title>
+</head>
+<body onload="onLoad()">
+	<header>
+		<h1>ESP32 LED Control</h1>
+	</header>
+	<nav>
+		<a href="/WiFiPortal/WiFiPortal.html"><button>Wi-Fi settings</button></a>
+		<a href="/edit"><button>Editor</button></a>
+		<a href="/update"><button>Update</button></a>
+	</nav>
+	<div class="container">
+		
+		<div class="card-grid">
+			<div class="card">
+				<div class="led blue">
+					<p><label>Stato LED blu: <strong class="led-label" data-pin="2">ON</strong></label></p>
+					<input class="led-button" type="button" name="blueLed" value="ON" data-pin="2" data-state="0" onclick="buttonClick(this)">
+				</div>
+				<div class="led blue">
+					<p><label>Stato LED rosso: <strong class="led-label" data-pin="27">ON</strong></label></p>
+					<input class="led-button" type="button" name="redLed" value="OFF" data-pin="27" data-state="1" onclick="buttonClick(this)">
+				</div>
+				<div>
+					<p><label>Save actual states</label></p>
+					<input class="green-button" type="button" name="deb" value="Save Config" onclick="saveConfig(this)">
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>

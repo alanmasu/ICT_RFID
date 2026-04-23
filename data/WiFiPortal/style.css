@@ -1,0 +1,47 @@
+
+.WiFi-form{ 
+  font-size: 1.4rem;
+}
+.WiFi-form legend{
+  font-weight: bold;
+}
+.content { 
+  padding: 5%;
+}
+
+input[type=submit] {
+  border: none;
+  color: #FEFCFB;
+  background-color: #034078;
+  padding: 15px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  width: 100px;
+  margin-right: 10px;
+  border-radius: 4px;
+  transition-duration: 0.4s;
+}
+
+input[type=submit]:hover {
+  background-color: #1282A2;
+}
+
+.myLabel{
+  float: left;
+}
+
+input[type=text], input[type=password], select {
+  width: 40%;
+  padding: 12px 20px;
+  margin: 18px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+form label {
+  font-size: 1.2rem; 
+}
