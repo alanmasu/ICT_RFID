@@ -47,9 +47,9 @@ void loop() {
 		return;
 	}
 
-    Serial.print("Card UID: ");
-    MFRC522Debug::PrintUID(Serial, (mfrc522.uid));
-    Serial.println();
+    // Serial.print("Card UID: ");
+    // MFRC522Debug::PrintUID(Serial, (mfrc522.uid));
+    // Serial.println();
 
     // Save the UID on a String variable
     String uidString = "";
@@ -59,5 +59,16 @@ void loop() {
         }
         uidString += String(mfrc522.uid.uidByte[i], HEX);
     }
-    Serial.println(uidString);
+    // Serial.println(uidString);
+
+    if(uidString == TAG1) {
+        Serial.println("CocaCola can detected!");
+    } else if(uidString == TAG2) {
+        Serial.println("Water bottle detected!");
+    } else {
+        Serial.println("Unknown tag detected!"); 
+    }
+
+    // Wait until the card is removed before scanning for new cards. 
+    while (mfrc522.PICC_IsNewCardPresent());
 }

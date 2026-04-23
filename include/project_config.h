@@ -17,4 +17,7 @@
 #define RP1 33
 
 
+#define TAG1 "1a61c8fc" // Con camma
+#define TAG2 "8ae5bffc" // Senza camma
+
 #endif // __PROJECT_CONFIG_H__
